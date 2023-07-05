@@ -198,12 +198,30 @@ main .img-container {
     display: flex;
     justify-content: space-between;
 } 
-
+.iconos {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    padding-left: 0em;   
+}
+#ico-mail {
+    width: 12vw;
+    margin: 4em 5em 2em 2em;
+    max-width: 70px;
+}
+#ico-git {
+    width: 12vw;
+    margin: 4em 5em 2em 5em;
+    max-width: 70px;
+}
+#ico-link {
+    width: 12vw;
+    margin: 4em 1.3em 5em 5em;
+    max-width: 70px;
+}
 
 footer {
     background-color: rgb(37, 190, 42);
     font-size: 30px;
     padding: 5px 5px 5px 5px;
-}
-
 }
