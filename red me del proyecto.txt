@@ -1,0 +1,18 @@
+
+to do:
+
+convertir tama;o de iconos
+correciones
+       
+     
+Muy buen desempeño, cosas a tener en cuenta las imágenes de los iconos no respetan el tamaño 
+Mobile.
+
+faltan las rutas en: 
+- Sobre mi
+- Contactos 
+- Iconos
+(href="ruta...")                         logrado
+
+El boton del CV no me permite descargar el cv, tampoco me deja visualizarlo, de igual forma 
+falta una ruta
