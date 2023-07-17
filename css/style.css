@@ -2,8 +2,18 @@
     box-sizing: border-box;
   }*/
 
+  header {
+    padding-bottom: 0px;
+    padding-right: 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+
 body {
-    margin: 0;
+    margin: 1em;
+    padding-top: 6em;
     }
 
 h1 {
@@ -35,6 +45,8 @@ a {
 .cabecera {
     
     /*max-width: 1400px;*/
+    
+
     margin: auto;
 }
 
@@ -132,11 +144,15 @@ header {
 
 .hablemos {
     background-color: rgb(37, 190, 42);
+    margin: 1px 30px 1px 30px;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding-bottom: 2em;
     border-radius: 10%;
+}
+.green-container {
+    margin-left: 10px;
 }
 
 .iconos {
@@ -179,7 +195,7 @@ header .cabecera {
     flex-direction: row;
     align-items: center;
     padding-top: 0.5em;
-    padding-bottom: 1em;
+    /*padding-bottom: 1em;*/
     justify-content: space-between;    
     }
 main .img-container {
@@ -213,15 +229,16 @@ main .img-container {
     width: 12vw;
     margin: 4em 5em 2em 5em;
     max-width: 70px;
-}
+    }
 #ico-link {
     width: 12vw;
     margin: 4em 1.3em 5em 5em;
     max-width: 70px;
-}
+    }
 
 footer {
     background-color: rgb(37, 190, 42);
     font-size: 30px;
     padding: 5px 5px 5px 5px;
+    }
 }
