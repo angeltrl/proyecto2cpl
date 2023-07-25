@@ -4,7 +4,7 @@
 
   header {
     padding-bottom: 0px;
-    padding-right: 40px;
+    padding-right: 10px;
     position: fixed;
     left: 0;
     top: 0;
@@ -14,6 +14,8 @@
 body {
     margin: 1em;
     padding-top: 6em;
+    /*para el ham*/
+    /*overflow: hidden;*/
     }
 
 h1 {
@@ -39,55 +41,67 @@ li {
 }
 
 a {
-    font-size: 0.3vh;
-}
-
-.cabecera {
+    font-size: 0.2vh;
+    text-decoration: none;
     
-    /*max-width: 1400px;*/
-    
-
-    margin: auto;
-}
-
-header .img-cabecera {  
-    margin: 0;
-    
-    /*padding: 25px 30px;*/   
 }
 
 #cpl {
     width: 30vw;
     max-width: 150px
+    
 }
 
-header .cabecera {
-    display: flex;
-    flex-direction: row;
+.btn-menu {
+    flex-direction: column;
+    background-color: burlywood;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 0.5em;
+    height: 0;
+    padding: 0 50px;
+    margin: 0;
+    width: 100%;
+    display: none;
+}
+
+header .cabecera { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 1em;
     padding-bottom: 1em;
+    
     
     
 }
 
 header nav {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-
+    flex-direction: column;
 }
 
 header a{
     display: flex;
-    padding-left: 1em;
-    padding-bottom: 20px;
-    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 6vw;
     font-weight: bold;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+    
 }
+
+header a:hover {
+    background-color: rgb(102, 124, 103);
+}
+
 
 #nav-mi {
     color: rgb(74, 73, 73);
+    width: 100%;
 
 }
 
@@ -98,7 +112,34 @@ header a{
 
 
 
-button {
+
+.ham {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.ham span {
+    display: block;
+    background-color:rgb(74, 73, 73);
+    height: 2px;
+    width: 23px;
+    margin: 5px auto;
+    border-radius: 2px;
+}
+
+.btn-menu.activado {
+    display:flex;
+    height: 80vh;
+}
+
+.cvbtn {
     font-size: 2.5em;
     font-weight: bold;
     padding: 10px 30px;
@@ -109,7 +150,7 @@ button {
     background-color: rgb(26, 131, 30);
 }
 
-button:hover {
+.cvbtn:hover {
     background-color: rgb(18, 87, 20);
 }
 
@@ -188,16 +229,19 @@ footer {
 }
 
 
-@media (min-width: 700px){
+@media (min-width: 420px){
 
 header .cabecera {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 0.5em;
-    /*padding-bottom: 1em;*/
+    padding-bottom: 1em;
     justify-content: space-between;    
     }
+button.ham {
+    display: none;
+}
 main .img-container {
     display: inline-flex;
     justify-content: left;

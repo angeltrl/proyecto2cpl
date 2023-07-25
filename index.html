@@ -11,19 +11,23 @@
                 font-family: "ysabeau", sans-serif ;
                  }
         </style>
-        <title>Portfolio Angel Tovar</title>
+        <title>Portfolio 2 Angel Tovar</title>
     </head>
 <body>
-    <script src="js/main.js"></script>
+
     <header>
         <div class="cabecera">
-            <div class="img-cabecera">
-                <img id ="cpl" src="img/cpl.png" alt="codigo pa lante">
-            </div>
-
             <nav>
-                    <a id="nav-mi" href="#link-me">sobre mi</a>
-                    <a id="nav-contact"  href="#ico-mail">contactos</a>
+                <img id ="cpl" src="img/cpl.png" alt="codigo pa lante">
+                    <div class="btn-menu">
+                        <a id="nav-mi" href="#link-me">sobre mi</a>
+                        <a id="nav-contact"  href="#ico-mail">contactos</a>
+                    </div>>
+                    <button class="ham" type="button">
+                        <span class="br-1"></span>
+                        <span class="br-2"></span>
+                        <span class="br-3"></span>
+                    </button>
             </nav>
         </div>
     </header>
@@ -32,7 +36,7 @@
     
       <div class="foto-title">  
         <div class="img-container">
-            <img id="foto"    src="img/angeltrl.png" alt="angel tovar" title="angeltrl">
+            <img id="foto" src="img/angeltrl.png" alt="angel tovar" title="angeltrl">
         </div>
         <div id="contenido"></div>
        <div>
@@ -57,7 +61,7 @@
             <strong>codigo pa' lante</strong>, donde espero aprender bastante y con estas herramientas cambiar mi modo de vida
             y el de mi familia para mejor. Muchisimas gracias y que siga la buena vibra.
             </p>
-            <button onclick="window.location.href='cv/angel j tovar l pro.pdf'">Descarga mi CV</button>
+            <button class="cvbtn" onclick="window.location.href='cv/angel j tovar l pro.pdf'">Descarga mi CV</button>
 
     </section>
     <section class="hablemos">
@@ -85,6 +89,6 @@
         <h3 id="foot-text">ANGEL TOVAR 2023</h3>
         
     </footer>
-    
+    <script src="js/main.js"></script>
 </body>
 </html>
