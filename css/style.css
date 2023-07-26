@@ -2,30 +2,14 @@
     box-sizing: border-box;
   }*/
 
-  header {
-    padding-bottom: 0px;
-    padding-right: 10px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-  }
-
-body {
-    margin: 1em;
-    padding-top: 6em;
-    /*para el ham*/
-    /*overflow: hidden;*/
-    }
-
 h1 {
     font-size: 4em;
     }
-        
+
 h2 {
     font-size: 2.5em;
     }
-        
+
 p {
     margin: 1em;
     font-size: 1.25em;
@@ -43,55 +27,84 @@ li {
 a {
     font-size: 0.2vh;
     text-decoration: none;
-    
+
 }
+
+
+  body {
+    margin: 1px;
+    padding-top: 6em;
+    /*para el ham*/
+    /*overflow: hidden;*/
+    }
+
+  header {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: baseline;  */
+    padding-right: 5px; 
+    margin-right: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
 
 #cpl {
     width: 30vw;
     max-width: 150px
-    
+
+}
+
+#nav-mi {
+    color: rgb(74, 73, 73);
+    padding: 0 0.2em;
+}
+
+#nav-contact {
+    color: rgb(74, 73, 73);
+
 }
 
 .btn-menu {
-    flex-direction: column;
-    background-color: burlywood;
+    /* flex-direction: row;
+    background-color: rgb(255, 255, 255);
     justify-content: space-around;
     align-items: center;
     height: 0;
-    padding: 0 50px;
+    padding: 0 ;
     margin: 0;
-    width: 100%;
-    display: none;
+    width: 100%; */
+
 }
 
-header .cabecera { 
-    display: flex;
+header .cabecera {
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 1em;
-    padding-bottom: 1em;
-    
-    
-    
+    padding-bottom: 1em; */
+
+
+
 }
 
 header nav {
-    flex-direction: column;
+    /* flex-direction: row; */
 }
 
 header a{
-    display: flex;
+    /* display: flex;  esto cambia el sentido*/
     margin: 0;
     padding: 0;
-    font-size: 6vw;
+    font-size: 6vw; 
     font-weight: bold;
-    list-style-type: none;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
+    /*list-style-type: none; */
+    /*justify-content: center;*/
+    /*text-align: center;*/
     transition: 0.5s;
-    
+
 }
 
 header a:hover {
@@ -99,25 +112,11 @@ header a:hover {
 }
 
 
-#nav-mi {
-    color: rgb(74, 73, 73);
-    width: 100%;
-
-}
-
-#nav-contact {
-    color: rgb(74, 73, 73);
-    
-}
-
-
-
-
 .ham {
     display: block;
     position: absolute;
     top: 15px;
-    right: 25px;
+    right: 10px;
     cursor: pointer;
     border: none;
     margin: 0;
@@ -162,7 +161,7 @@ main .img-container {
 }
 
 #foto {
-    width: 95vw;
+    width: 90vw;
     border-radius: 50%;
     max-width: 400px
 }
@@ -178,7 +177,7 @@ header {
 
 .presentacion {
     background-color: rgb(255, 255, 255);
-    
+
     align-items: center;
     text-align: center;
 }
@@ -201,7 +200,7 @@ header {
     flex-direction: row;
     justify-content:center;
     padding-left: 0em;
-    
+
 }
 
 #ico-mail {
@@ -232,13 +231,23 @@ footer {
 @media (min-width: 420px){
 
 header .cabecera {
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: left; */
+    /* padding-top: 0.5em; */
+     }
+
+.btn-menu {
+    /* display: flex; */
+    /* flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
     align-items: center;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-    justify-content: space-between;    
-    }
+
+    padding: 0;
+    margin: 0; */
+}
+
 button.ham {
     display: none;
 }
@@ -257,12 +266,12 @@ main .img-container {
 .foto-title {
     display: flex;
     justify-content: space-between;
-} 
+}
 .iconos {
     display: flex;
     flex-direction: column;
     justify-content:left;
-    padding-left: 0em;   
+    padding-left: 0em;
 }
 #ico-mail {
     width: 12vw;
@@ -285,4 +294,4 @@ footer {
     font-size: 30px;
     padding: 5px 5px 5px 5px;
     }
-}
+}  /*pertenece al query*/
